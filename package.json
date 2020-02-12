@@ -1,5 +1,5 @@
 {
-  "name": "cs-timeline",
+  "name": "history-of-computer-science",
   "version": "1.0.0",
   "description": "A Timeline for Computer Science",
   "main": "index.js",
@@ -17,7 +17,9 @@
   ],
   "author": "John Need",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "d3": "^5.15.0"
+  },
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-eslint": "^10.0.3",
