@@ -26,7 +26,8 @@
   "globals": {
     "module": true,
     "Reflect": true, // for Reflect.deleteProperty()
-    "__DEV__": true
+    "__DEV__": true,
+    "window": true
  },
   "env": {
     "browser": false,

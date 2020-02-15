@@ -1,0 +1,25 @@
+.global-header {
+
+}
+
+.global-header_ul {
+    display:block;
+
+}
+
+.global-header_li {
+    display: inline-block;
+
+}
+
+.global-header_link{
+    text-decoration: none;
+    color: #3a768f;
+    font-size: 2rem;
+    line-height: 3rem;
+    transition: color 0.7s;
+}
+
+.global-header_link:hover{
+    color: #00b3ff;
+}

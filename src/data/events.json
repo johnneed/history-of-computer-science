@@ -1,0 +1,43 @@
+{
+  "euclid": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Euclid",
+    "year": -300,
+    "summary": "Euclid invents the algorithm",
+    "image": "euclid.jpg"
+  },
+  "muhammad-ibn-musa-al-khwarizmi": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Muhammad Ibn Musa Al Khwarizmi",
+    "year": 820,
+    "summary": "Muhammad Ibn Musa Al Khwarizmi invents algorithms for solving linear equations. The words 'algorithm and algebra are derived from his Latin name, Algoritmi",
+    "image": "muhammad-ibn-musa-al-Khwarizmi.jpg"
+  },
+  "pierre-de-fermat": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Pierre de Fermat",
+    "year": 1665,
+    "summary": "Pierre de Fermat scribbles his last theorem in the margins of a book.  It is later discovered and immediately declared to be the most difficult math problem of all time.",
+    "image": "pierre-de-fermat.jpg"
+  },
+  "leibniz": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Gottried Wilhelm Leibniz",
+    "year": 1694,
+    "summary": "Invents Calculus and the calculator, both frustrating and delighting math majors everywhere.",
+    "image": "leibniz.jpg"
+  },
+  "euler": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Leonhard Euler",
+    "year": 1694,
+    "summary": "Euler invents the function",
+    "image": "euler.jpg"
+  }
+
+}

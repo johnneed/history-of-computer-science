@@ -1,10 +1,104 @@
-.chart div {
-    font: 10px sans-serif;
-    background-color: steelblue;
-    text-align: right;
-    padding: 3px;
-    margin: 1px;
+
+.time-line {
+    background-color: #EEE;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 10rem 0;
+    scroll-behavior: smooth;
+}
+
+.time-line_year {
+    font: 0.8rem sans-serif;
+    padding: 1rem 0.5rem;
     color: white;
-    width: 30px;
+    width: 5rem;
     display: inline-block;
+    line-height: 2rem;
+    vertical-align: bottom;
+    border-width: 0 0 0 1px;
+    border-color: #EEE;
+    border-style: solid;
+    text-align: center;
+}
+
+.time-line_event-article {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.time-line_event-avatar {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #444;
+    border-width: 0.3rem;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 6;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -5.5rem;
+}
+
+.time-line_event-container {
+
+}
+
+.time-line_event-link {
+    padding-top: 6.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 10rem;
+    color: #282c34;
+    text-decoration: none;
+    width: 12rem;
+    border-width: 0 4rem 0 4rem;
+    border-style: solid;
+    display: block;
+}
+
+.time-line_event-title {
+    text-align: center;
+    white-space: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.time-line_event-summary {
+    overflow: hidden;
+    white-space: normal;
+    padding: 1rem;
+    margin: 0;
+}
+
+.time-line_article-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-line_article-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.time-line_event-avatar-link{
+    display: block;
+    margin: 0 auto;
+}
+
+.time-line_next-event{
+    position: absolute;
+    bottom: -5rem;
+    font-size: 2rem;
+    color: red;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }

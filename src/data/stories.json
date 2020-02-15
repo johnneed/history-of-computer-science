@@ -1,0 +1,20 @@
+{
+  "euclid": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "headline": "Euclid",
+    "text": "lorem ipsum"
+  },
+  "muhammad-ibn-musa-al-khwarizmi": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "headline": "Muhammad Ibn Musa Al Khwarizmi",
+    "text": "lorem ipsum"
+  },
+  "pierre-de-fermat": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "headline": "Pierre de Fermat",
+    "text": "lorem ipsum"
+  }
+}

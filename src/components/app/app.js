@@ -3,7 +3,8 @@ import React from "react";
 import "./app.css";
 import Home from "../home";
 import About from "../about";
-import Tales from "../tale";
+import Articles from "../articles";
+import type TimeLineEvent from "../../models/time-line-event";
 
 import {
     BrowserRouter as Router,
@@ -12,7 +13,9 @@ import {
 } from "react-router-dom";
 import { GlobalHeader } from "../global-header/global-header";
 
-function App() {
+type PropsType = { startYear: number, endYear: number, events: { [string]: TimeLineEvent } };
+
+function App({ startYear, endYear, events }: PropsType): React$Element<any> {
     return (
         <Router>
             <div>
@@ -23,11 +26,11 @@ function App() {
                     <Route path="/about">
                         <About/>
                     </Route>
-                    <Route path="/tales">
-                        <Tales/>
+                    <Route path="/articles">
+                        <Articles/>
                     </Route>
                     <Route path="/">
-                        <Home/>
+                        <Home startYear={ startYear } endYear={ endYear } events={ events }/>
                     </Route>
                 </Switch>
             </div>
