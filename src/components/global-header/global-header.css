@@ -1,3 +1,63 @@
-.default {
-    color: #282c34;
+.global-header {
+
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.global-header_title {
+    font-size: 1.4rem;
+    font-family: rubik;
+    margin: 0.5rem 1rem;
+    transition: font-size 0.7s;
+    line-height: 2rem
+}
+
+.global-header_toggle-nav {
+    font-size: 2rem;
+    padding: 0;
+    border: none;
+    background: #EEE;
+    height: 2rem;
+    margin: 0.5rem 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.global-header_nav > .global-header_toggle-nav {
+    float: right
+}
+
+
+.global-header_ul {
+    display: block;
+
+}
+
+.global-header_li {
+    display: inline-block;
+
+}
+
+.global-header_link {
+    text-decoration: none;
+    color: #3a768f;
+    font-size: 2rem;
+    line-height: 3rem;
+    transition: color 0.7s;
+}
+
+.global-header_link:hover {
+    color: #00b3ff;
+}
+
+
+@media (min-width: 768px) {
+
+    .global-header_title {
+        font-size: 2rem;
+    }
 }

@@ -4,23 +4,17 @@ import React from "react";
 import "./global-header.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
-export const GlobalHeader = () => (
-    <nav className={ "global-header" }>
-        <ul className={ "global-header_ul" }>
-            <li className={ "global-header_li" }>
-                <Link className={ "global-header_link" } to="/">
-                    <FontAwesomeIcon icon={ faHome }/>
-                    <span>{ "Home" }</span>
-                </Link>
-            </li>
-            <li className={ "global-header_li" }>
-                <Link className={ "global-header_link" } to="/about">
-                    <FontAwesomeIcon icon={ faInfoCircle }/>
-                    <span>{ "About" }</span>
-                </Link>
-            </li>
-        </ul>
-    </nav>
-);
+export const GlobalHeader = () => {
+    return (
+        <div className={ "global-header" }>
+            <h1 className={ "global-header_title" }>History of Functional Programming</h1>
+            <Link
+                className={ "global-header_toggle-nav" }
+                to={ "/about" }>
+                <FontAwesomeIcon icon={ faInfoCircle }/>
+            </Link>
+        </div>
+    );
+};

@@ -2,13 +2,18 @@
 
 import React from "react";
 
-type PropsType = { height: string, width: string, background: string, fill: string };
-export const BottomCurveLeft = ({ height, width, background, fill }: PropsType): React$Element<any> => (
+type PropsType = { height: string, width: string, color: string };
+export const BottomCurveLeft = ({ height, width, color }: PropsType): React$Element<any> => (
     <div className={ "bottom-curve" } style={ { width: width, height: height } }>
-        <svg xmlns="http://www.w3.org/2000/svg" height={ "100%" } width={ "100%" }
-             viewBox="0 0 100 100">
-            <circle cx="0" cy="0" r="100" fill={ fill || "#AAA" }/>
-            <circle cx="0" cy="0" r="50" fill={ background || "white" }/>
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="80" height="80" viewBox="0 0 80 80">
+            <circle
+                cy="0"
+                cx="0"
+                r="60"
+                fill="none"
+                stroke={ color }
+                stroke-width="40"/>
         </svg>
     </div>
 );

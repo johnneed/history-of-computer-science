@@ -38,6 +38,180 @@
     "year": 1694,
     "summary": "Euler invents the function",
     "image": "euler.jpg"
+  },
+  "lovelace": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Ada Lovelace",
+    "year": 1843,
+    "summary": "Ada Lovelace writes the first computer program on punch cards, a nested for-loop to calculate Bernoulli numbers",
+    "image": "lovelace.jpg"
+  },
+  "hilbert": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "David Hilbert",
+    "year": 1928,
+    "summary": "David Hilbert asks a great question.  This questions becomes known as the Entsheidungsproblem",
+    "image": "hilbert.jpg"
+  },
+  "godel": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Kurt Friedrich Gödel",
+    "year": 1933,
+    "summary": "Gödel ruins everything",
+    "image": "godel.jpg"
+  },
+  "herbrand": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Jaques Herbrand",
+    "year": 1933,
+    "summary": "Herbrand invents recursion",
+    "image": "herbrand.jpg"
+  },
+  "turing": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Alan Turing",
+    "year": 1936,
+    "summary": "Alan Turing invents the computer before it's invented",
+    "image": "turing.jpg"
+  },
+  "church": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Alonzo Church",
+    "year": 1936,
+    "summary": "Church invents Lambda Calculus, the mathematical foundation for functional programming",
+    "image": "church.jpg"
+  },
+  "curry": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Haskell Curry",
+    "year": 1947,
+    "summary": "Describes the first \"high level\" computer language and invents a thing called the \"Y Combinator\"",
+    "image": "curry.jpg"
+  },
+  "neumann": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "John Von Neumann",
+    "year": 1945,
+    "summary": "Neumann creates the basic architecture for modern computers",
+    "image": "neumann.jpg"
+  },
+  "kleene": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Stephen Kleene",
+    "year": 1952,
+    "summary": "Neumann creates the basic architecture for modern computers",
+    "image": "kleene.jpg"
+  },
+  "fortran": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Fortran",
+    "year": 1957,
+    "summary": "Fortran is the first high level computer language",
+    "image": "fortran.jpg"
+  },
+  "mccarthy": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Lisp",
+    "year": 1958,
+    "summary": "John McCarthy invents Lisp, the first functional programming language",
+    "image": "mccarthy.jpg"
+  },
+  "strachey": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Christopher Strachey",
+    "year": 1967,
+    "summary": "Coins the terms \"currying\" and \"first class citizen\"",
+    "image": "strachey.jpg"
+  },
+  "backus": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "John Backus",
+    "year": 1977,
+    "summary": "John Backus publishes \"Can Programming be Liberated from the Von Neumann Style?\"",
+    "image": "backus.jpg"
+  },
+  "visicalc": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Visicalc",
+    "year":1979 ,
+    "summary": "Visicalc, the first spread-sheet, is releases",
+    "image": "visicalc.jpg"
   }
-
+,
+  "codd": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "E.F. Codd",
+    "year": 1981,
+    "summary": "E.F. Codd invents relational databases and SQL",
+    "image": "codd.jpg"
+  }
+,
+  "hudak": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Paul Hudak",
+    "year": 1990,
+    "summary": "Paul Hudak releases the Haskell Report, to announce a new and totally useless programming language.",
+    "image": "hudak.jpg"
+  }
+,
+  "moggi": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Eugenio Moggi",
+    "year": 1993,
+    "summary": "Eugenio Moggi presents his lecture \"Notions of Computation and Monads\"",
+    "image": "moggi.jpg"
+  }
+,
+  "wiles": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Sir Andrew Wiles",
+    "year": 1991,
+    "summary": "Sir Andrew Wiles proves Fermat's Last Theorem, 358 years after it was discovered.",
+    "image": "wiles.jpg"
+  }
+,
+  "eich": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "",
+    "year": 1995,
+    "summary": "Brendan Eich writes the first version of JavaScript in 10 days.",
+    "image": "eich.jpg"
+  }
+,
+  "linq": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Microsoft releases LINQ with asp.net 3.5",
+    "year": 2007,
+    "summary": " ",
+    "image": "linq.jpg"
+  }
+,
+  "haskell": {
+    "created": 1581538790066,
+    "updated": 1581538790066,
+    "title": "Real World Haskell",
+    "year": 2008 ,
+    "summary": "Haskell stops being useless",
+    "image": "haskell-logo.jpg"
+  }
 }

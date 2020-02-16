@@ -7,7 +7,8 @@ import TimeLineEvent from "../../models/time-line-event";
 import { Link } from "react-router-dom";
 import BottomCurveLeft from "../bottom-curve-left";
 import BottomCurveRight from "../bottom-curve-right";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleRight, faArrowAltCircleLeft, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import TopCurve from "../top-curve";
 
 const getColor = R.curry((startYear, endYear, year) => {
@@ -28,7 +29,10 @@ const mapYears = (startYear, endYear, events) => {
     const timeLineEvents = Object.values(events).sort((a, b) => (a.year - b.year));
     const anchorLookup = timeLineEvents.reduce((acc, event, idx) => ({
         ...acc,
-        [event.id]: (timeLineEvents[idx + 1] || timeLineEvents[0]).id
+        [event.id]: {
+            next: (timeLineEvents[idx + 1] || { id: null }).id,
+            previous: (timeLineEvents[idx - 1] || { id: null }).id
+        }
     }), {});
     for (let year = startYear; year <= endYear; year += 1) {
         const color = yearColor(year);
@@ -63,10 +67,26 @@ const mapYears = (startYear, endYear, events) => {
                         </Link>
                     </div>
                     <div className={ "time-line_article-footer" }>
-                        <BottomCurveLeft height={ "8rem" } width={ "8rem" } fill={ color } background={ "#EEE" }/>
-                        <BottomCurveRight height={ "8rem" } width={ "8rem" } fill={ color } background={ "#EEE" }/>
+                        <BottomCurveLeft height={ "8rem" } width={ "8rem" } color={ color }/>
+                        <BottomCurveRight height={ "8rem" } width={ "8rem" } color={ color }/>
                     </div>
-                    <div className={ "time-line_next-event" }><a href={ `#${ anchorLookup[event.id] }` }>{ "Next" }</a>
+                    <div className={ "time-line_nav" }>
+                        { anchorLookup[event.id].previous &&
+                        (
+                            <a className={ "time-line_previous-event" }
+                               href={ `#${ anchorLookup[event.id].previous }` }>
+                                <FontAwesomeIcon style={ { color: color } } icon={ faArrowAltCircleLeft }/>
+                            </a>
+                        )
+                        }
+                        { anchorLookup[event.id].next &&
+                        (
+                            <a className={ "time-line_next-event" } href={ `#${ anchorLookup[event.id].next }` }>
+                                <FontAwesomeIcon style={ { color: color } } icon={ faArrowAltCircleRight }/>
+
+                            </a>
+                        )
+                        }
                     </div>
                 </article>
             );

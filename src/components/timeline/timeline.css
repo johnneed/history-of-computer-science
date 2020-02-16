@@ -5,7 +5,7 @@
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: visible;
-    padding: 10rem 0;
+    padding: 1rem 0;
     scroll-behavior: smooth;
 }
 
@@ -21,6 +21,8 @@
     border-color: #EEE;
     border-style: solid;
     text-align: center;
+    margin-bottom: 5.6rem;
+
 }
 
 .time-line_event-article {
@@ -76,7 +78,7 @@
     margin: 0;
 }
 
-.time-line_article-footer{
+.time-line_article-footer {
     display: flex;
     justify-content: space-between;
 }
@@ -88,17 +90,23 @@
     width: 100%;
 }
 
-.time-line_event-avatar-link{
+.time-line_event-avatar-link {
     display: block;
     margin: 0 auto;
 }
 
-.time-line_next-event{
-    position: absolute;
-    bottom: -5rem;
-    font-size: 2rem;
-    color: red;
+.time-line_nav {
+    font-size: 4rem;
     margin: 0 auto;
     width: 100%;
     text-align: center;
+}
+
+.time-line_previous-event {
+    margin: 0 1rem;
+}
+
+.time-line_next-event {
+    margin: 0 1rem;
+
 }
