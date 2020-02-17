@@ -38,13 +38,38 @@
     border-style: solid;
     border-color: #444;
     border-width: 0.3rem;
-    background: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 6;
+    transform-style: preserve-3d;
     position: relative;
     margin: 0 auto;
     margin-top: -5.5rem;
+    transition: 1s;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+
+}
+.time-line_event-avatar > div{
+   position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+
+}
+
+
+.time-line_back{
+    transform: rotateY(180deg);
+
+}
+.time-line_front{  transform: rotateY(0deg);}
+
+.time-line_event-avatar:hover {
+    transform: rotateY(180deg);
 }
 
 .time-line_event-container {

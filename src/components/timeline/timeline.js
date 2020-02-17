@@ -53,9 +53,13 @@ const mapYears = (startYear, endYear, events) => {
                     <div className={ "time-line_article-header" }>
                         <TopCurve strokeWidth={ 40 } color={ color }/>
                         <Link to={ `/articles/${ event.id }` } className={ "time-line_event-avatar-link" }>
-                            <div
-                                className={ "time-line_event-avatar" }
-                                style={ { backgroundImage: `url(${ event.image })` } }/>
+                            <div className={ "time-line_event-avatar" }>
+                                <div className={ "time-line_front" }
+                                     style={ { backgroundImage: `url(${ event.image })` } }>
+                                </div>
+                                <div className={ "time-line_back" } style={ { backgroundColor: "red" } }>
+                                </div>
+                            </div>
                         </Link>
                     </div>
                     <div className={ "time-line_event-container" } style={ { borderColor: color } }>
